@@ -333,7 +333,7 @@ nav h1 {
     transition-delay: 900ms !important;
   }
   .slider__slide--active .slider__inner {
-    transform: scale(0.8);
+    transform: scale(0.85);
     box-shadow: 0 1vh 6vh rgba(0, 0, 0, 0.2);
     pointer-events: auto;
     opacity: 1;
@@ -533,5 +533,9 @@ nav h1 {
     {
         flex-direction: column-reverse;
     }
+
+    .slider__slide--active .slider__inner {
+        transform: scale(1);
+      }
 
 }
