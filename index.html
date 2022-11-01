@@ -5,6 +5,7 @@
         <title>1 S T E P | Home</title>
         <link rel="stylesheet" href="style.css"/>
         <script src="https://kit.fontawesome.com/a29f3f1e4b.js" crossorigin="anonymous"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     </head>
     <body>
         <header>
@@ -49,24 +50,58 @@
         </header>
 
         <section class = "home home_section" id="home">
-            <div class="section-container">
-                <div class="row">
-                    <div class="home_data">
-                        <div class="home_text">
-                            <h1>Find the Art in Ballet and Dance</h1>
-                            <p>Our premium, contemporary dance studio offers tuition and training in ballet and dance!</p>
-                            <a href="#classes" class="home_button">View our Classes</a>
-                        </div>
+            <div class="slider">
+                <div class="slider__slide slider__slide--active" data-slide="1">
+                  <div class="slider__wrap">
+                    <div class="slider__back"></div>
+                  </div>
+                  <div class="slider__inner">
+                    <div class="slider__content">
+                      <h1>Slide <br> One</h1><a class="go-to-next">next</a>
                     </div>
-                    <div class="home_data">
-                        <div class="home_picture">
-                            <img src="home_abstract_dance.png" alt="Abstract art of dancer" class="home_img">
-                        </div>
+                  </div>
+                </div>
+                <div class="slider__slide" data-slide="2">
+                  <div class="slider__wrap">
+                    <div class="slider__back"></div>
+                  </div>
+                  <div class="slider__inner">
+                    <div class="slider__content">
+                      <h1>Slide <br> Two</h1><a class="go-to-next">next</a>
                     </div>
+                  </div>
+                </div>
+                <div class="slider__slide" data-slide="3">
+                  <div class="slider__wrap">
+                    <div class="slider__back"></div>
+                  </div>
+                  <div class="slider__inner">
+                    <div class="slider__content">
+                      <h1>Slide <br> Three</h1><a class="go-to-next">next</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider__slide" data-slide="4">
+                    <div class="slider__wrap">
+                      <div class="slider__back"></div>
+                    </div>
+                    <div class="slider__inner">
+                      <div class="slider__content">
+                        <h1>Slide <br> Four</h1><a class="go-to-next">next</a>
+                      </div>
+                    </div>
+                  </div>
+                <div class="slider__indicators"></div>
+            </div>
+            <div class="home_data">
+                <div class="home_text">
+                    <h1>Find the Art in Ballet and Dance</h1>
+                    <p>Our premium, contemporary dance studio offers tuition and training in ballet and dance!</p>
+                    <a href="#classes" class="home_button">View our Classes</a>
                 </div>
             </div>
         </section>
 
-        <script src="main.js"></script>
+        <script language="Javascript" type="text/javascript" src="main.js"></script>
     </body>
 </html>
