@@ -46,3 +46,13 @@ $(document).ready(function () {
     }
     goToSlide(currentSlide);
   });
+  
+    $(".slider__next, .go-to-previous").on("click", function () {
+    var currentSlide = Number($(".slider__slide--active").data("slide"));
+    var totalSlides = $(".slider__slide").length;
+    currentSlide--;
+    if (currentSlide < 1) {
+      currentSlide = totalSlides;
+    }
+    goToSlide(currentSlide);
+  });
