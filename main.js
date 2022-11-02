@@ -36,6 +36,16 @@ $(document).ready(function () {
       "slider__slide--active"
     );
   }
+
+  setInterval(function() {
+    var currentSlide = Number($(".slider__slide--active").data("slide"));
+    var totalSlides = $(".slider__slide").length;
+    currentSlide++;
+    if (currentSlide > totalSlides) {
+      currentSlide = 1;
+    }
+    goToSlide(currentSlide);
+  }, 8000);
   
   $(".slider__next, .go-to-next").on("click", function () {
     var currentSlide = Number($(".slider__slide--active").data("slide"));

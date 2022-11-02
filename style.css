@@ -306,6 +306,7 @@ nav img {
     filter: blur(1.5vh);
     transition: filter 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
     transition-delay: 900ms !important;
+	border-radius: 20px;
   }
   .slider__slide--active .slider__inner {
     transform: scale(0.85);
@@ -314,6 +315,7 @@ nav img {
     opacity: 1;
     transition: transform 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86), box-shadow 900ms cubic-bezier(0.785, 0.135, 0.15, 0.86), opacity 1ms step-end;
     transition-delay: 900ms;
+	border-radius: 20px;
   }
   .slider__slide--active .slider__content {
     opacity: 1;
@@ -408,24 +410,29 @@ nav img {
     opacity: 1;
 }
 
-.home .section-container
+.section-container
 {
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-.home .row
+.odd,
+.row
 {
     display: flex;
+	flex-wrap: wrap;
     height: 100%;
+	width: 85%;
     align-items: center;
+	margin: auto;
+	padding-top: 50px;
 }
 
 .home_data
 {
     display: flex;
-    flex-direction: column;
+	flex-direction: column;
     flex: 0 0 50%;
     max-width: 50%;
     height: 100%;
@@ -434,7 +441,7 @@ nav img {
     justify-self: center;
     align-items: center;
     text-align: center;
-    margin-top: 100px;
+	padding-bottom: 50px;
 }
 
 .home_text h1
@@ -449,31 +456,10 @@ nav img {
     font-size: 34px;
 }
 
-.home_button
+.home_img img
 {
-    display: inline-block;
-    background-color: var(--ballet_shoe_pink);
-    color: var(--light_grey_bg);
-    padding: 1rem 1.25rem;
-    border-radius: 1rem;
-    font-weight: 700;
-    font-size: 34px;
-    transition: 0.4s ease;
-}
-
-.home_button:hover
-{
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.45);
-}
-
-.home_text
-{
-    justify-content: left;
-    justify-items: left;
-    justify-self: left;
-    align-items: left;
-    text-align: left;
-    z-index: 2;
+	width: 100%;
+	border-radius: 20px;
 }
 
 @media (min-width: 960px) {
@@ -503,16 +489,16 @@ nav img {
         z-index: 3;
     }
 
+	.odd
+	{
+		flex-direction: column-reverse;
+	}
+
     .home_picture img
     {
         width:100%;
         margin-top: -50px;
         z-index: 2;
-    }
-
-    .row
-    {
-        flex-direction: column-reverse;
     }
 
     .slider__slide--active .slider__inner {
