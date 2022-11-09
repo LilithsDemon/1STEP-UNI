@@ -18,8 +18,8 @@ html {
 }
 
 body {
-	background-color: var(--light_grey_bg);
-	color: var(--light);
+	background-color: #ffffff;
+	color: var(--black);
 	line-height: 1.5;
 	font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
 	font-style: normal;
@@ -43,7 +43,7 @@ nav {
 	-webkit-backdrop-filter: blur(8px);
 	backdrop-filter: blur(8px);
 	padding: 16px 32px;
-	border-bottom: 3px solid var(--ballet_shoe_pink);
+	border-bottom: 3px solid var(--black);
 	border-top: 0;
 }
 
@@ -55,7 +55,6 @@ nav img {
 	display: block;
 	position: center;
 	width: 100%;
-
 	user-select: none;
 	border: none;
 	appearance: none;
@@ -84,7 +83,7 @@ nav img {
 	margin-bottom: 5px;
 	position: relative;
 
-	background-color: var(--light);
+	background-color: var(--black);
 	border-radius: 6px;
 	z-index: 1;
 
@@ -130,7 +129,7 @@ nav img {
 }
 
 .menu a {
-	color: var(--light);
+	color: var(--black);
 	font-size: 20px;
 	font-weight: 600;
 	text-decoration: none;
@@ -170,7 +169,7 @@ nav img {
 .mobile-menu a {
 	display: block;
 	padding: 1rem;
-	color: var(--light);
+	color: var(--light_grey_bg);
 	text-align: center;
 	text-decoration: none;
 	font-size: 1.25rem;
@@ -450,12 +449,12 @@ nav img {
 
 .slider__slide:nth-child(1) .slider__back,
 .slider__slide:nth-child(1) .slider__inner {
-	background-image: url(Assets/Images/rainbow_dance.jpg);
+	background-image: url(Assets/Images/contemp_dance.jpg);
 }
 
 .slider__slide:nth-child(2) .slider__back,
 .slider__slide:nth-child(2) .slider__inner {
-	background-image: url(Assets/Images/rainbow_people.jpg);
+	background-image: url(Assets/Images/contemp_dance.jpg);
 }
 
 .slider__slide:nth-child(3) .slider__back,
@@ -465,7 +464,7 @@ nav img {
 
 .slider__slide:nth-child(4) .slider__back,
 .slider__slide:nth-child(4) .slider__inner {
-	background-image: url(Assets/Images/ballet_prep.jpg);
+	background-image: url(Assets/Images/contemp_dance.jpg);
 }
 
 .home {
