@@ -245,7 +245,7 @@ nav img {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
-	color: white;
+	color: black;
 	font-family: "Heebo", sans-serif;
 	opacity: 0;
 	transition: opacity 450ms;
@@ -272,9 +272,9 @@ nav img {
 
 .slider__content .button {
 	background-color: transparent;
-	border: 6px double var(--light);
+	border: 6px double var(--black);
 	border-radius: 20px;
-	color: var(--light);
+	color: var(--black);
 	font-size: 24px;
 	margin-top: 40px;
 	padding: 20px;
@@ -530,7 +530,7 @@ nav img {
 footer {
 	width: 100%;
 	text-align: center;
-	border-top: 3px solid var(--ballet_shoe_pink);
+	border-top: 3px solid var(--black);
 	bottom: 0;
 	margin-top: auto;
 }
@@ -587,7 +587,7 @@ footer ul li a:hover i {
 }
 
 
-@media (min-width: 960px) {
+@media (min-width: 961px) {
 	.hamburger {
 		display: none;
 	}
