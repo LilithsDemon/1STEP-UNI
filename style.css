@@ -1,6 +1,6 @@
 :root {
 	--ballet_shoe_pink: #ebced5;
-	--light: #eeeeee;
+	--light: #f9f9f9;
 	--black: #000000;
 	--light_grey_bg: #3e3e3e;
 	--dark-grey_bg: #212121;
@@ -813,7 +813,7 @@ footer ul li a:hover i {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	background-color: var(--dark-grey_bg);
+	background-color: var(--light);
 	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
 	border-radius: 20px;
 	overflow:hidden;
