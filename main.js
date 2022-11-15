@@ -2,6 +2,9 @@ const hamburger = document.querySelector('.hamburger');
 const mobile_menu_items = document.querySelectorAll('.m_m_item');
 const mobile_menu = document.querySelector('.mobile-menu');
 
+var $setter = $("#contact_form");
+$("#map").css("width", $setter.width()+"px");
+
 function toggleMenu ()
 {
     hamburger.classList.toggle('is-active');
