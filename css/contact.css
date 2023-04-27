@@ -1,0 +1,148 @@
+.contact_section,
+.content_section
+{
+	margin-top: 100px;
+}
+
+.contact_details {
+	text-align: center;
+	font-size: 20px;
+}
+
+.contact_part
+{
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 100%;
+	max-width: 100%;
+	height: 100%;
+	justify-content: center;
+	justify-items: center;
+	justify-self: center;
+	align-items: center;
+	text-align: center;
+	padding: 10px;
+	margin-top: 15px;
+	margin-bottom: 35px;
+}
+
+.contact_container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+.contact_container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: var(--dark-grey_bg);
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+	border-radius: 20px;
+	overflow:hidden;
+}
+
+.left{
+	background: url("../Assets/Images/finding_us.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+
+.right{
+	padding: 25px 40px;
+}
+
+.contact-box h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+.contact-box h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: var(--ballet_shoe_pink);
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+	border-radius: 20px;
+}
+
+.field:hover{
+	background-color: var(--ballet_shoe_pink);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: var(--ballet_shoe_pink);
+	color: var(--black);
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+	border-radius: 20px;
+}
+
+.btn:hover{
+    background-color: var(--light_grey_bg);
+	color: var(--light);
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: var(--light);
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+
+@media (min-width: 961px) {
+	.contact_part iframe
+	{
+		max-width: 100%;
+	}
+
+}
