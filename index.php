@@ -13,7 +13,7 @@
 
 <body>
 
-	<?php include 'php/nav--light_grey_bgbar.php' ;?>
+	<?php include 'php/navbar.php' ;?>
 
 	<style>
 		.slider__slide:nth-child(1) .slider__back,

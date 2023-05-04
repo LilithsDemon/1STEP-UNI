@@ -1,0 +1,36 @@
+.dashboard
+{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.dashboard .navigation
+{
+    background-color: var(--dark_grey_bg);
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    max-width: 10%;
+    text-align: center;
+    height: 100%;
+    text-align: let;
+}
+
+.dashboard .navigation span
+{
+    padding: 15px 0 15px 0;
+    font-size: 5vw;
+}
+
+.dashboard .frame
+{
+    width: 90%;
+    max-width: 90%;
+    height: 100%;
+}
+
+.dashboard .navigation .is-active
+{
+    background-color: var(--light_grey_bg);
+}
