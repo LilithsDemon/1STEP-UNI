@@ -6,6 +6,7 @@
 	<title>1 S T E P | Classes</title>
 	<link rel="stylesheet" href="css/mainStyle.css" />
 	<link rel="stylesheet" href="css/classes.css" />
+	<link rel="stylesheet" href="css/title.css" />
 	<script src="https://kit.fontawesome.com/a29f3f1e4b.js" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
 </head>

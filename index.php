@@ -13,7 +13,7 @@
 
 <body>
 
-	<?php include 'php/navbar.php' ;?>
+	<?php include 'php/nav--light_grey_bgbar.php' ;?>
 
 	<style>
 		.slider__slide:nth-child(1) .slider__back,
@@ -172,6 +172,7 @@
 	<?php include 'php/footer.php'?>
 
 	<script language="Javascript" type="text/javascript" src="js/main.js"></script>
+	<script langauge="Javascript" type="text/javascript" stc="js/main.js"></script>
 </body>
 
 </html>
