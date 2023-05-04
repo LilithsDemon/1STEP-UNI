@@ -222,14 +222,6 @@ nav img {
 	z-index: 0;
 }
 
-.title h2 {
-	text-align: center;
-	margin: auto;
-	font-size: 2rem;
-    border-bottom: 5px solid var(--underline-color);
-	border-radius: 5px;
-}
-
 footer {
 	width: 100%;
 	text-align: center;

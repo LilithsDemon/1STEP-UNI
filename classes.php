@@ -11,50 +11,7 @@
 </head>
 
 <body>
-	<header>
-		<nav>
-			<div class="container">
-				<img src="Assets/Images/one-step-logo.png">
-
-				<div class="menu">
-					<ul class="nav_list">
-						<li class="nav_item">
-							<a href="index.html" class="">Home</a>
-						</li>
-						<li class="nav_item">
-							<a href="about-us.html" class="">About Us</a>
-						</li>
-						<li class="nav_item">
-							<a href="#" class="is-active">Classes</a>
-						</li>
-						<li class="nav_tem">
-							<a href="gallery.html" class="">Gallery</a>
-						</li>
-						<li class="nav_item">
-							<a href="contact-us.html" class="">Contact Us</a>
-						</li>
-						<li class="nav_item">
-							<a href="login.html" class=""><i class="fa-solid fa-user"></i></a>
-						</li>
-					</ul>
-				</div>
-
-				<button class="hamburger">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
-			</div>
-		</nav>
-		<div class="mobile-menu">
-			<button class="m_m_item"><a href="#home">Home</a></button>
-			<button class="m_m_item"><a href="#about">About Us</a></button>
-			<button class="m_m_item"><a href="#classes">Classes</a></button>
-			<button class="m_m_item"><a href="#gallery">Gallery</a></button>
-			<button class="m_m_item"><a href="#contact">Contact Us</a></button>
-			<button class="m_m_item"><a href="#login"><i class="fa-solid fa-user"></i> Login</a></button>
-		</div>
-	</header>
+	<?php include 'php/navbar.php' ;?>
 
 	<section class="classes classes_section" id="classes">
 		<div class="section top_image">
@@ -220,32 +177,7 @@
 		</div>
 	</section>
 
-	<footer>
-		<ul>
-			<li>
-				<a href="#">
-					<i class="fa fa-twitter"></i>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class="fa fa-facebook"></i>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class="fa fa-youtube"></i>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class="fa fa-instagram"></i>
-				</a>
-			</li>
-		</ul>
-
-		<p>© 1 STEP. All Rights Reserved.</p>
-	</footer>
+	<?php include 'php/footer.php'?>
 
 	<script language="Javascript" type="text/javascript" src="js/main.js"></script>
 </body>

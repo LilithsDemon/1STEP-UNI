@@ -6,55 +6,14 @@
 	<title>1 S T E P | Gallery</title>
 	<link rel="stylesheet" href="css/mainStyle.css" />
 	<link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/title.css" />
 	<script src="https://kit.fontawesome.com/a29f3f1e4b.js" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
 </head>
 
 <body>
-	<header>
-		<nav>
-			<div class="container">
-				<img src="Assets/Images/one-step-logo.png">
-
-				<div class="menu">
-					<ul class="nav_list">
-						<li class="nav_item">
-							<a href="index.html">Home</a>
-						</li>
-						<li class="nav_item">
-							<a href="about-us.html" class="">About Us</a>
-						</li>
-						<li class="nav_item">
-							<a href="classes.html" class="">Classes</a>
-						</li>
-						<li class="nav_tem">
-							<a href="#" class="">Gallery</a>
-						</li>
-						<li class="nav_item">
-							<a href="contact-us.html" class="">Contact Us</a>
-						</li>
-						<li class="nav_item">
-							<a href="login.html" class=""><i class="fa-solid fa-user"></i></a>
-						</li>
-					</ul>
-				</div>
-
-				<button class="hamburger">
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
-			</div>
-		</nav>
-		<div class="mobile-menu">
-			<button class="m_m_item"><a href="#home">Home</a></button>
-			<button class="m_m_item"><a href="#about">About Us</a></button>
-			<button class="m_m_item"><a href="#classes">Classes</a></button>
-			<button class="m_m_item"><a href="#gallery">Gallery</a></button>
-			<button class="m_m_item"><a href="#contact">Contact Us</a></button>
-			<button class="m_m_item"><a href="#login"><i class="fa-solid fa-user"></i> Login</a></button>
-		</div>
-	</header>
+	
+	<?php include 'php/navbar.php' ;?>
 
     <div class="row title">
         <h2>Our Gallery</h2>
@@ -92,6 +51,8 @@
             </div>
         </div>
     </div>
+
+    <?php include 'php/footer.php'?>
 
 	<script language="Javascript" type="text/javascript" src="js/main.js"></script>
 </body>

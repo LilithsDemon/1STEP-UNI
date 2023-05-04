@@ -1,0 +1,9 @@
+.title h2 {
+	text-align: center;
+	margin: auto;
+	font-size: 2rem;
+    border-bottom: 5px solid var(--underline-color);
+	border-radius: 5px;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}

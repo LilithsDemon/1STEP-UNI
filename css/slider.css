@@ -259,75 +259,7 @@
 	}
 }
 
-.slider__slide:nth-child(1) .slider__back,
-.slider__slide:nth-child(1) .slider__inner {
-	background-image: url(../Assets/Images/rainbow_dance.jpg);
-}
-
-.slider__slide:nth-child(2) .slider__back,
-.slider__slide:nth-child(2) .slider__inner {
-	background-image: url(../Assets/Images/rainbow_people.jpg);
-}
-
-.slider__slide:nth-child(3) .slider__back,
-.slider__slide:nth-child(3 ) .slider__inner {
-	background-image: url(../Assets/Images/contemp_dance.jpg);
-}
-
-.slider__slide:nth-child(4) .slider__back,
-.slider__slide:nth-child(4) .slider__inner {
-	background-image: url(../Assets/Images/ballet_prep.jpg);
-}
-
-.home_data {
-	display: flex;
-	flex-direction: column;
-	flex: 0 0 50%;
-	max-width: 50%;
-	height: 100%;
-	justify-content: center;
-	justify-items: center;
-	justify-self: center;
-	align-items: center;
-	text-align: center;
-	padding: 10px;
-}
-
-.home_text h1 {
-	margin-bottom: 30px;
-	font-size: 48px;
-}
-
-.home_text p {
-	margin: 30px 0;
-	font-size: 34px;
-}
-
-.home_img img {
-	width: 100%;
-	border-radius: 20px;
-}
-
 @media(max-width: 960px) {
-	.home_data
-	{
-		flex: 0 0 100%;
-		max-width: 100%;
-	}
-	.home_picture .home_text {
-		z-index: 3;
-	}
-
-	.odd {
-		flex-direction: column-reverse;
-	}
-
-	.home_picture img {
-		width: 100%;
-		margin-top: -50px;
-		z-index: 2;
-	}
-
 	.slider__slide--active .slider__inner {
 		transform: scale(1);
 	}

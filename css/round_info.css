@@ -1,15 +1,10 @@
-.title {
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
-
-.image img{
+.round_info.image img{
     border-radius: 100%;
     width: 450px;
     height: 450px;
 }
 
-section {
+.round_info {
     display: flex;
 	flex-wrap: wrap;
 	width: 80%;
@@ -22,8 +17,8 @@ section {
     flex-direction: row;
 }
 
-.image,
-.text
+.round_info .image,
+.round_info .text
 {
     width: 50%;
     max-width: 50%;
