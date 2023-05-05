@@ -171,8 +171,8 @@
 
 	<?php include 'php/footer.php'?>
 
-	<script language="Javascript" type="text/javascript" src="js/main.js"></script>
-	<script langauge="Javascript" type="text/javascript" stc="js/main.js"></script>
+	<script langauge="Javascript" type="text/javascript" src="js/main.js"></script>
+	<script langauge="Javascript" type="text/javascript" src="js/slider.js"></script>
 </body>
 
 </html>

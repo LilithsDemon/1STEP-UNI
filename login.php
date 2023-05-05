@@ -9,15 +9,13 @@ if (!isset($_SESSION['username'])) {
 if (!isset($_SESSION['auth']))
 {
 	$_SESSION['auth'] = false;
-	header("Location: index.php");
-	die();
 }
 
 include("./php/include/_connect.php");
 
 if (isset($_GET['username']))
 {
-    header("Location: dashbard.php");
+    header("Location: dashboard.php");
 }
 
 ?>

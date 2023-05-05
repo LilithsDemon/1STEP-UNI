@@ -1,0 +1,14 @@
+.page-warning
+{
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    color: var(--text-colour);
+    align-items: center;
+    justify-content: center;
+}
+
+.page-warning h2
+{
+    color: var(--text-colour);
+}
