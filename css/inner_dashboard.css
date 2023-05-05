@@ -12,3 +12,63 @@
 {
     color: var(--text-colour);
 }
+
+.full-screen
+{
+    height: 100%;
+}
+
+.width_2
+{
+    padding-top: 100px;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    row-gap: 50px;
+    flex-direction: row;
+}
+
+.width_2 .card
+{
+    width: 40%;
+    height: 300px;
+    border-radius: 20px;
+    background: var(--primary-colour);
+    color: var(--text-colour);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+}
+
+.width_2 .card .title
+{
+    height: 15%;
+    display: flex;
+    display: row;
+    flex-direction: row;
+    font-size: 23px;
+}
+
+.width_2 .card .body
+{
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (max-width: 500px)
+{
+    .width_2
+    {
+        flex-direction: column;
+    }
+
+    .width_2 .card
+    {
+        width: 85%;
+    }
+}

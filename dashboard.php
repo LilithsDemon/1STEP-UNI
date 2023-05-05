@@ -102,13 +102,12 @@ include("./php/include/_connect.php");
             </div>
 
             <div class="bottom-content">
-                <li class="">
-                    <a href="#">
+                <li class=''>
+                    <a href="../php/logout.php">
                         <i class='bx bx-log-out icon' ></i>
                         <span class="text nav-text">Logout</span>
                     </a>
                 </li>
-                
             </div>
         </div>
 

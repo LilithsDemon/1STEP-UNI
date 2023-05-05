@@ -31,7 +31,7 @@ if (isset($_POST['username'], $_POST['password']))
         {        
             session_start();
 
-            $_SESSION['auth'] = 'true';
+            $_SESSION['auth'] = true;
 
             $_SESSION['userID'] = $USER['UID'];
             $_SESSION['username'] = $USER['Username'];

@@ -187,11 +187,12 @@ header .image-text .profession{
     background-color: var(--body-colour);
     transition: var(--tran-05);
 }
-.home iframe{
+.home #frame{
     height: 100vh;
     width: 100%;
     border: none;
 }
+
 .sidebar.close ~ .home{
     left: 78px;
     height: 100vh;
