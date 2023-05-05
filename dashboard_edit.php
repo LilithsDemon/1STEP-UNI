@@ -18,6 +18,7 @@ if ($_SESSION['auth'] == false)
 }
 
 include("./php/include/_connect.php");
+include("./php/graphs.php");
 
 ?>
 
@@ -31,12 +32,21 @@ include("./php/include/_connect.php");
 	<link rel="stylesheet" href="css/inner_dashboard.css" />
 	<script src="https://kit.fontawesome.com/a29f3f1e4b.js" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
+	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-	<nav>
+	
+	<div class="page_card">
+		<?php showPartTable(0, $connect); ?>
+	</div>
+	<div class="page_card">
+		<?php showPartTable(1, $connect); ?>
+	</div>
+	<div class="page_card">
+		<?php showPartTable(2, $connect); ?>
+	</div>
 
-	</nav>
 </body>
 
 </html>
