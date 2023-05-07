@@ -17,8 +17,28 @@ if ($_SESSION['auth'] == false)
 	header("Location: index.php");
 }
 
+if (!isset($_SESSION['last_page']))
+{
+    $_SESSION['last_page'] = "Home";
+}
+
 include("./php/include/_connect.php");
 
+switch($_SESSION['last_page'])
+{
+    case "Home":
+        $link = '"dashboard_home.php"';
+        break;
+    case "Edit":
+        $link = '"dashboard_edit.php"';
+        break;
+    case "Analytics":
+        $link = '"dashboard_analytics.php"';
+        break;
+    case "Notifications":
+        $link = '"dashboard_notifications.php"';
+        break;
+}
 ?>
 
 <!DOCTYPE html>
@@ -114,7 +134,7 @@ include("./php/include/_connect.php");
     </nav>
 
     <section class="home">
-        <iframe id="frame" src="dashboard_home.php"></iframe>
+        <iframe id="frame" src=<?php echo $link ?>></iframe>
     </section>
 
     <script src="js/dashboard.js"></script>

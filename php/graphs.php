@@ -5,13 +5,14 @@
     $sql = "SELECT PartType, PartVal, PartOrder FROM `Parts` WHERE PageID = " . $pageID . " ORDER BY PartOrder ASC;";
     $run = runAndCheckSQL($connect,$sql);
 ?>
-<table class="table table-striped table-dark">
-    <thead class="thead-dark">
+<table>
+    <thead>
         <tr>
             <th scope="col">#</th>
             <th scope="col">Part Type</th>
             <th scope="col">Part Data</th>
             <th scope="col">Part Order</th>
+            <th scope="col">Delete</th>
         </tr>
     </thead>
     <tbody>
@@ -90,8 +91,8 @@
             </td>
         </tr>
     <?php
+        $x++;
     }
-    $x++;
     ?>
     </table>
 <?php

@@ -17,6 +17,9 @@ if ($_SESSION['auth'] == false)
 	header("Location: index.php");
 }
 
+$_SESSION['last_page'] = "Home";
+
+
 include("./php/include/_connect.php");
 
 ?>

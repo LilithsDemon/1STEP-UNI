@@ -20,6 +20,8 @@ if ($_SESSION['auth'] == false)
 include("./php/include/_connect.php");
 include("./php/graphs.php");
 
+$_SESSION['last_page'] = "Edit";
+
 ?>
 
 <!DOCTYPE html>
@@ -36,13 +38,26 @@ include("./php/graphs.php");
 </head>
 
 <body>
-	
-	<div class="page_card">
-		<?php showPartTable(1, $connect); ?>
+	<section class="section_body">
+	<div class = "table">
+		<div class="table_header">
+			<h1>Home Page</h1>
+		</div>
+		<div class="table_body">
+			<?php showPartTable(1, $connect); ?>
+		</div>
 	</div>
-	<div class="page_card">
-		<?php showPartTable(2, $connect); ?>
+		
+	<div class = "table">
+		<div class="table_header">
+			<h1>About Us Page</h1>
+		</div>
+		<div class="table_body">
+			<?php showPartTable(2, $connect); ?>
+		</div>
 	</div>
+	</section>
+
 </body>
 
 </html>

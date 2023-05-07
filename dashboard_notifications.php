@@ -19,6 +19,8 @@ if ($_SESSION['auth'] == false)
 
 include("./php/include/_connect.php");
 
+$_SESSION['last_page'] = "Notifications";
+
 ?>
 
 <!DOCTYPE html>
