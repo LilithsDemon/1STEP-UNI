@@ -40,7 +40,8 @@
         {
             $sql_part_data = "SELECT `Odd` FROM `BlockInfo` WHERE `InfoID` = " . $partVal . ";";
             $data = runAndCheckSQL($connect, $sql_part_data);
-            if($data['Odd'] == true)
+            $data = mysqli_fetch_assoc($data);
+            if($data['Odd'] == 1)
             {
                 $partData = "Reversed Text and Image";
             }
@@ -53,7 +54,8 @@
         {
             $sql_part_data = "SELECT `Odd` FROM `CircleInfo` WHERE `InfoID` = " . $partVal . ";";
             $data = runAndCheckSQL($connect, $sql_part_data);
-            if($data['Odd'] == true)
+            $data = mysqli_fetch_assoc($data);
+            if($data['Odd'] == 1)
             {
                 $partData = "Reversed Text and Image";
             }
@@ -69,10 +71,9 @@
             $partData = mysqli_fetch_assoc($data)['Title'];
         }
 
-        $sql_get_part_type = "SELECT `PartName` FROM `PartDescriptions` WHERE `PartVal` = " . $partVal . ";";
+        $sql_get_part_type = "SELECT `PartName` FROM `PartDescriptions` WHERE `PartVal` = " . $partType . ";";
         $data = runAndCheckSQL($connect, $sql_get_part_type);
         $partNameData = mysqli_fetch_assoc($data)['PartName'];
-    }
 ?>
         <tr class="">
             <td>
@@ -89,6 +90,7 @@
             </td>
         </tr>
     <?php
+    }
     $x++;
     ?>
     </table>

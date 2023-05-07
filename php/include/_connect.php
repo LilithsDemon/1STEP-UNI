@@ -24,5 +24,3 @@ function showError($sql, $connection){
     echo "<div class=\"alert alert-danger\"><strong>ERROR!</strong> : " .  $sql . "<br>" . mysqli_error($connection)."</div>";
 }
 ?>
-
-?>

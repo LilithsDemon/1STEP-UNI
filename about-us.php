@@ -14,21 +14,10 @@
 <body>
 	
 	<?php include 'php/navbar.php' ;?>
+    <?php include 'php/loadParts.php' ;?>
+    <?php include 'php/include/_connect.php' ;?>
 
-    <div class="row title">
-        <h2>Our Mission Statement</h2>
-    </div>
-
-    <section class="round_info">
-        <div class="text">
-            <p>This is a big standard mission statement. Lorem ipsum dolor sit amet consectetur adipisicing elit. A iure beatae ducimus alias quod atque obcaecati sint hic delectus quas saepe dicta, ex, culpa maxime sit reiciendis quae non! Beatae.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum illo fuga possimus itaque. Modi dolorum ratione unde error placeat doloremque commodi, totam minima sint vitae. Nostrum aperiam atque reprehenderit eius?
-			</p>
-        </div>
-        <div class="image">
-            <img src="/Assets/Images/children_swan.jpg" alt="children dancing as swans">
-        </div>
-    </section>
+    <?php loadPage(2, $connect); ?>
 
     <?php include 'php/footer.php'?>
 

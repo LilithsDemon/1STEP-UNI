@@ -1,26 +1,61 @@
-.round_info .image img{
-    border-radius: 100%;
-    width: 450px;
-    height: 450px;
-}
-
-.round_info {
-    display: flex;
-	flex-wrap: wrap;
-	width: 80%;
+.alt_circle_info_data {
+	display: flex;
+	flex-direction: row;
+	height: 100%;
 	justify-content: center;
-    justify-items: center;
-    justify-self: center;
-    align-items: center;
-	margin: auto;
-	z-index: 0;
-    flex-direction: row;
+	justify-items: center;
+	justify-self: center;
+	align-items: center;
+	text-align: center;
+	padding: 10px;
 }
 
-.round_info .image,
-.round_info .text
-{
-    width: 50%;
-    max-width: 50%;
-    text-align: center;
+.alt_circle_info_data_odd {
+	display: flex;
+	flex-direction: row-reverse;
+	height: 100%;
+	justify-content: center;
+	justify-items: center;
+	justify-self: center;
+	align-items: center;
+	text-align: center;
+	padding: 10px;
+}
+
+.alt_circle_info_text {
+	width: 50%;
+ 	padding: 20px;
+    font-size: 24px;
+}
+
+.alt_circle_info_img {
+	width: 50%;
+    border-radius: 100%;
+	padding: 20px;
+}
+
+.alt_circle_info_img img {
+	width: 100%;
+	border-radius: 100%;
+	padding: 20px;
+}
+
+@media(max-width: 960px) {
+	.alt_circle_info_data,
+	.alt_circle_info_data_odd
+	{
+		flex-direction: column;
+		width: 100%;
+	}
+	.alt_circle_info_text {
+		z-index: 3;
+	}
+
+	.alt_circle_info_text {
+		width: 100%;
+	}
+	
+	.alt_circle_info_img {
+		width: 100%;
+	}
 }
