@@ -38,6 +38,9 @@ switch($_SESSION['last_page'])
     case "Notifications":
         $link = '"dashboard_notifications.php"';
         break;
+    case "Profiles":
+        $link = '"dashboard_profiles.php"';
+        break;
 }
 ?>
 
@@ -118,6 +121,15 @@ switch($_SESSION['last_page'])
                         </li>
                     </button>
 
+                    <button class="dash_btn" onclick="switchPanel(5)">
+                        <li class="nav-link">
+                            <a href="#">
+                            <i class='bx bxs-group icon' ></i>
+                                <span class="text nav-text">Live View</span>
+                            </a>
+                        </li>
+                    </button>
+
                 </ul>
             </div>
 
@@ -130,7 +142,6 @@ switch($_SESSION['last_page'])
                 </li>
             </div>
         </div>
-
     </nav>
 
     <section class="home">

@@ -30,11 +30,13 @@
 					<div class="left"></div>
 					<div class="right">
 						<h2>Contact Us</h2>
-						<input type="text" required class="field" placeholder="Your Name: * ">
-						<input type="text" required class="field" placeholder="Company Name: * ">
-						<input type="text" class="field" placeholder="Email Address: ">
-						<textarea reqired placeholder="Message: *" class="field"></textarea>
+						<form action="php/send_mail.php" method="post">
+						<input type="text" required class="field" name="username" placeholder="Your Name: * ">
+						<input type="text" required class="field" name="company_name" placeholder="Company Name: * ">
+						<input type="email" class="field" name="email" placeholder="Email Address: ">
+						<textarea reqired placeholder="Message: *" name="message" class="field"></textarea>
 						<button class="btn">Send</button>
+						</form>
 					</div>
 				</div>
 			</div>

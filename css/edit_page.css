@@ -1,0 +1,30 @@
+body
+{
+    background-color: var(--sidebar-colour);
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+body form input
+{
+    font-size: 16px;
+    height: 10%;
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+#reverse_button
+{
+    height: 6%;
+}
+
+#submit
+{
+    margin-top: 10px;
+    width: 120px;
+    background-color: greenyellow;
+    border: none;
+    border-radius: 30px;
+}
+

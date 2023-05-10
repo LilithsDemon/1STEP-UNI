@@ -18,9 +18,8 @@ if ($_SESSION['auth'] == false)
 }
 
 include("./php/include/_connect.php");
-include("./php/graphs.php");
 
-$_SESSION['last_page'] = "Edit";
+$_SESSION['last_page'] = "Profiles";
 
 ?>
 
@@ -34,36 +33,12 @@ $_SESSION['last_page'] = "Edit";
 	<link rel="stylesheet" href="css/inner_dashboard.css" />
 	<script src="https://kit.fontawesome.com/a29f3f1e4b.js" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
-	<link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet' />
 </head>
 
 <body>
-	<section class="section_body">
-	<div class = "table">
-		<div class="table_header">
-			<h1>Home Page</h1>
-		</div>
-		<div class="table_body">
-			<?php showPartTable(1, $connect); ?>
-		</div>
+	<div class="page-warning">
+		<h2>You do not have permissions to create new users. Talk to the Admin</h2>
 	</div>
-		
-	<div class = "table">
-		<div class="table_header">
-			<h1>About Us Page</h1>
-		</div>
-		<div class="table_body">
-			<?php showPartTable(2, $connect); ?>
-		</div>
-	</div>
-	</section>
-	<div id="edit_window" class="extrawindow not_visible">
-		<iframe id="edit_frame" src="https://youtube.com"></iframe>
-		<button onclick="closeWindow()">X</button>
-	</div>
-
-	<script src="js/edit.js" type="text/javascript"></script>
-
 </body>
 
 </html>
